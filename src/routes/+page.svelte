@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+
+	// Icons
+	import IconCalendar from "~icons/lucide/calendar";
+	import IconTrophy from "~icons/lucide/trophy";
+	import IconSparkles from "~icons/lucide/sparkles";
+	import IconFolderKanban from "~icons/lucide/folder-kanban";
+	import IconRefreshCw from "~icons/lucide/refresh-cw";
+	import IconGift from "~icons/lucide/gift";
 </script>
 
 <Hero
@@ -36,62 +44,97 @@
 />
 
 <Summary
-	generating
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="Rooted consolidates your family's calendars, tasks, and projects into one intuitive planning hub designed specifically for dual-income households managing kids' schedules. We transform the daily juggle of disconnected apps and endless group texts into seamless coordination, so you can focus on what matters most—spending quality time together instead of chasing down logistics."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Priya Mehta",
+			position: "Marketing Director & Mom of 3",
+			company: "Seattle, WA",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Rooted saved us 8+ hours weekly by eliminating the endless back-and-forth texts about who's picking up whom. Our family finally has one source of truth for soccer practice, dentist appointments, and everything in between.",
+			image: "/generated/image-professional-headshot-of-a-confident-asi.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Carlos Rivera",
+			position: "Software Engineer & Dad of 2",
+			company: "Austin, TX",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"We haven't missed a single recital or pickup since switching to Rooted three months ago. The daily digest means my wife and I are always on the same page without constantly checking four different apps.",
+			image: "/generated/image-professional-headshot-of-a-friendly-hisp.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Amara Williams",
+			position: "Nurse Manager & Mom of 2",
+			company: "Atlanta, GA",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"The gamification turned chore wars into teamwork. My kids actually complete tasks now because they're earning points, and I reclaimed 5 hours per week I used to spend nagging and coordinating.",
+			image: "/generated/image-professional-headshot-of-an-approachable.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Everything your family needs, all in one place"
+	subtitle="Replace scattered apps and endless group texts with a single hub that makes coordination effortless"
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "Unified family calendar",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"See everyone's schedules at a glance and eliminate missed appointments. Sync with Google Calendar, Outlook, and Apple Calendar so nothing falls through the cracks.",
+			icon: IconCalendar
 		},
 		{
-			title: "Data Analysis",
+			title: "Gamified task management",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"Turn chores into achievements with points, streaks, and rewards that motivate kids to actually help. Watch household responsibilities transform from nagging battles into friendly competition.",
+			icon: IconTrophy
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Smart daily digest",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Get one morning notification with everything your family needs to know today. No more checking four different apps or scrolling through endless group texts to stay coordinated.",
+			icon: IconSparkles
+		},
+		{
+			title: "Collaborative project hub",
+			description:
+				"Manage complex family projects like vacation planning, home renovations, and birthday parties with shared task lists and file attachments. Everyone stays aligned without the chaos.",
+			icon: IconFolderKanban
+		},
+		{
+			title: "Real-time family sync",
+			description:
+				"See instant updates when schedules change or tasks get completed. Replace notification overload with smart alerts that keep everyone informed without the constant buzzing.",
+			icon: IconRefreshCw
+		},
+		{
+			title: "Household rewards system",
+			description:
+				"Build family accountability with customizable points and rewards that drive engagement. Kids earn privileges while parents gain peace of mind knowing responsibilities are handled.",
+			icon: IconGift
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+	title="Stop juggling apps"
+	subtitle="Start enjoying family time"
+	description="You're already managing enough. Replace your scattered Google Calendar, Todoist, and endless group texts with one simple hub. Start your free trial today and get your evenings back."
+	imageSrc="/generated/image-a-happy-working-parent-sitting-comfortab.webp"
+	callsToAction={[
+		{
+			href: "/",
+			label: "Start free trial",
+			variant: "primary"
+		},
+		{
+			href: "/",
+			label: "See how it works",
+			variant: "secondary"
+		}
+	]}
+/>
