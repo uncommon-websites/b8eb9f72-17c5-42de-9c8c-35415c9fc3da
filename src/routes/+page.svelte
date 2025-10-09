@@ -10,12 +10,30 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+	title="Turn family chaos into seamless coordination"
+	subtitle="One gamified planning hub that replaces scattered calendars, endless group texts, and missed appointments."
+	imageSrc="/generated/image-a-cheerful-family-scene-inside-a-cozy-su.webp"
+	centered={false}
+	callsToAction={[
+		{
+			href: "/",
+			label: "Start free trial"
+		},
+		{
+			href: "/about",
+			label: "Learn more"
+		}
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Trusted by families at"
+	logoUrls={[
+		'https://cdn.brandfetch.io/patagonia.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/salesforce.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/netflix.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/target.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
